@@ -12,4 +12,4 @@ class Solution(object):
             right -= 1  
             boats += 1
             
-        return boats
+        return boats    
