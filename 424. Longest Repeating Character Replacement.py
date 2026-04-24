@@ -9,7 +9,7 @@ class Solution(object):
             count[s[right]] = count.get(s[right], 0) + 1
             max_freq = max(max_freq, count[s[right]])
             
-            # Nếu cần thay quá k ký tự → thu nhỏ window
+            
             while (right - left + 1) - max_freq > k:
                 count[s[left]] -= 1
                 left += 1
